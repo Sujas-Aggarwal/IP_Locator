@@ -73,16 +73,25 @@ tbody tr{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid black;
 }
 tbody tr:nth-child(2n+1){
     background: rgb(226, 226, 226);
 }
 tr td{
     width: 100%;
-    border: 1px solid black;
     text-align: center;
 }
 tbody tr td:nth-child(1){
     text-transform:capitalize;
    font-weight: bold;
+}
+tbody tr td:nth-child(2){
+    border: solid black;
+    border-width: 0px 0px 0px 1px;
+}
+@media screen and (max-width:600px) {
+    table{
+        width: 100%;
+    }
 }
