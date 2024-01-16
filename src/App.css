@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+html {
+  scrollbar-gutter: both-edges;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.container .wrapper {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.container .wrapper img {
+  width: 150px;
+}
+.container .wrapper .input {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+}
+.container .wrapper .input input {
+  width: 60%;
+  text-align: center;
+  height: 40px;
+  border: 2px purple solid;
+}
+.container .wrapper .input button {
+  width: 100px;
+  background: purple;
+  color: white;
+}
+
+.container .wrapper button {
+  width: 200px;
+  background: purple;
+  color: white;
+  height: 40px;
+  cursor: pointer;
+}
+.container .wrapper p {
+  color: purple;
+  font-size: 12px;
+}
+table{
+    width: 60%;
+    border: 2px solid black;
+
+}
+tbody{
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+
+}
+tbody tr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+tbody tr:nth-child(2n+1){
+    background: rgb(226, 226, 226);
+}
+tr td{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
+tbody tr td:nth-child(1){
+    text-transform:capitalize;
+   font-weight: bold;
+}
