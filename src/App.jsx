@@ -6,6 +6,14 @@ function App() {
   const [IP, setIP] = useState("");
   const [data, setData] = useState({"API Credit Goes to":"<a target='_blank' href='https://geolocation-db.com/'>geolocation-db.com</a>"});
   const [loading, setLoading] = useState(false)
+  useEffect(()=>{
+    document.addEventListener("keydown",(e)=>{
+      console.log(e)
+      if (e.key=="Enter"){
+        getInfo()
+      }
+    })
+  },[])
   function showTable() {
     let table = document.getElementById("table")
     table.innerHTML = ""
