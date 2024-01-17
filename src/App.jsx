@@ -10,7 +10,6 @@ function App() {
     let table = document.getElementById("table")
     table.innerHTML = ""
     let cols1 = Object.keys(data);
-    console.log(cols1);
     cols1.forEach((i) => {
       table.innerHTML += `<tr><td>${i}</td><td>${data[i]}</td></tr>`;
     });
