@@ -8,7 +8,6 @@ function App() {
   const [loading, setLoading] = useState(false)
   useEffect(()=>{
     document.addEventListener("keydown",(e)=>{
-      console.log(e)
       if (e.key=="Enter"){
         getInfo()
       }
